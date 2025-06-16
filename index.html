@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-[#f0f2f5] h-screen flex justify-center items-center font-sans">
+    <div class="container bg-white rounded-lg w-[300px] p-5 text-center shadow-md">
+      <div id="Quiz">
+        <div id="question-number" class="text-base font-bold mb-2">Question 1 of 4</div>
+        <div id="question" class="text-lg mb-5">Question Text</div>
+        <div class="options flex flex-col">
+          <button class="option bg-blue-600 text-white border-none py-2 my-1 rounded hover:bg-blue-800 transition duration-300">Option 1</button>
+          <button class="option bg-blue-600 text-white border-none py-2 my-1 rounded hover:bg-blue-800 transition duration-300">Option 2</button>
+          <button class="option bg-blue-600 text-white border-none py-2 my-1 rounded hover:bg-blue-800 transition duration-300">Option 3</button>
+          <button class="option bg-blue-600 text-white border-none py-2 my-1 rounded hover:bg-blue-800 transition duration-300">Option 4</button>
+        </div>
+        <div class="footer flex justify-between items-center mt-5">
+          <span id="timer" class="font-bold">Time Left : 10s</span>
+          <button id="next-btn" disabled class="bg-green-600 text-white border-none py-2 px-4 rounded cursor-pointer hover:bg-green-700 transition duration-300">Next</button>
+        </div>
+      </div>
+      <div id="results" class="hide">
+        <h2 class="font-bold">Your Score : <span id="score"></span></h2>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
